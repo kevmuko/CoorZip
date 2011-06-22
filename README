@@ -20,21 +20,24 @@ UPDATE 5:
 UPDATE 6:
 - Added XML (uses yahoo's)
 
+UPDATE 7: 
+- Parsing error in CSV fixed
+
 CoorZip is a utility that imports CSV (Excel documents) that contain latitude/longitude coordinates or individual
 coordinates and converts them to U.S. Postal Zipcodes through Google's & Yahoo's Reverse Geocoding API by JSON or XML parsing.
 
 Example of a CSV document that can be used:
 
-48.85, -92.55
-48.85, -92.45
-48.75, -123.65
-48.75, -123.55
-48.75, -123.45
-48.75, -123.35
-48.75, -123.25
-48.75, -123.15
-48.75, -123.05
-48.75, -122.95
+48.85,-92.55
+48.85,-92.45
+48.75,-123.65
+48.75,-123.55
+48.75,-123.45
+48.75,-123.35
+48.75,-123.25
+48.75,-123.15
+48.75,-123.05
+48.75,-122.95
 
 CSV documents are basically text files that contain a comma as a separator between each column.
 Thus, you can just make a simple text file and rename the extension to .csv to fit your needs.

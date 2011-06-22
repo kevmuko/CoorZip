@@ -67,7 +67,7 @@
 		
 		//parse CSV and separate it by commas
 		for (NSString *line in lines) {
-			NSArray *values = [line componentsSeparatedByString:@", "];
+			NSArray *values = [line componentsSeparatedByString:@","];
 			if ([values count] != 2) {
 				continue;
 			}
@@ -131,6 +131,7 @@
 	else {
 		string = [[zipcodes stringValue] stringByAppendingFormat:@"\n%@", postal];
 	}
+	NSLog(@"Result: %@", string);
 	[zipcodes setStringValue:string];
 }
 -(void)parseXML:(NSMutableDictionary *)dictionary {

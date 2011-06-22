@@ -67,7 +67,7 @@
 		
 		//parse CSV and separate it by commas
 		for (NSString *line in lines) {
-			NSArray *values = [line componentsSeparatedByString:@", "];
+			NSArray *values = [line componentsSeparatedByString:@","];
 			if ([values count] != 2) {
 				continue;
 			}
