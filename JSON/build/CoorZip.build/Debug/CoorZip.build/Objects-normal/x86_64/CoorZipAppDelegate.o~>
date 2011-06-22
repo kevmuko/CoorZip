@@ -1,0 +1,2 @@
+/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m: In function '-[CoorZipAppDelegate parseCSV:]':
+/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:123: warning: local declaration of 'pool' hides instance variable

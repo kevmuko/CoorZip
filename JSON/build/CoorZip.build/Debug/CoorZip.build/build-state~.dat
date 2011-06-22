@@ -1,0 +1,286 @@
+TCoorZip
+v7
+r0
+t330319323.998924
+cCheck dependencies
+cProcessInfoPlistFile /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Info.plist CoorZip-Info.plist
+cCopyStringsFile /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib
+cProcessPCH /var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-hkbmtrlomtncmygkaouynththtlp/CoorZip_Prefix.pch.gch CoorZip_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/main.o /Users/kevin/Desktop/CoorZip/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/CoorZipAppDelegate.o /Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/MacOS/CoorZip normal x86_64
+cTouch /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004D5A274300000000000000EE
+t1297753923
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004DF94DB00000000000006560
+t1308183984
+s25952
+
+N/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.h
+c000000004E000CF500000000000003FC
+t1308626165
+s1020
+i<Cocoa/Cocoa.h>
+i<YAJL/YAJL.h>
+
+N/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m
+c000000004E000E380000000000000EDB
+t1308626488
+s3803
+i"CoorZipAppDelegate.h"
+
+N/Users/kevin/Desktop/CoorZip/CoorZip_Prefix.pch
+c000000004DFFDE620000000000000091
+t1308614242
+s145
+i<Cocoa/Cocoa.h>
+
+N/Users/kevin/Desktop/CoorZip/English.lproj/InfoPlist.strings
+c000000004DFFDE62000000000000002D
+t1308614242
+s45
+
+N/Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib
+c000000004DFFF5E2000000000003B5AA
+t1308620258
+s243114
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/NSBundle+YAJL.h
+c000000004E00053E000000000000090E
+t1308624190
+s2318
+i"YAJLParser.h"
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/NSObject+YAJL.h
+c000000004E00053E0000000000001525
+t1308624190
+s5413
+i"YAJLGen.h"
+i"YAJLParser.h"
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/YAJL.h
+c000000004E00053E0000000000001A1E
+t1308624190
+s6686
+i"YAJLParser.h"
+i"YAJLDocument.h"
+i"YAJLGen.h"
+i"NSObject+YAJL.h"
+i"NSBundle+YAJL.h"
+i<YAJL/YAJL.h>
+i<YAJLiOS/YAJL.h>
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/YAJLDocument.h
+c000000004E00053E0000000000001C2B
+t1308624190
+s7211
+i"YAJLParser.h"
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/YAJLGen.h
+c000000004E00053E000000000000102E
+t1308624190
+s4142
+i"yajl_gen.h"
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/YAJLParser.h
+c000000004E00053E00000000000015E8
+t1308624190
+s5608
+i"yajl_parse.h"
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/yajl_common.h
+c000000004E00053E0000000000000C3B
+t1308624190
+s3131
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/yajl_gen.h
+c000000004E00053E0000000000001C2D
+t1308624190
+s7213
+i<yajl/yajl_common.h>
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/Headers/yajl_parse.h
+c000000004E00053E0000000000002137
+t1308624190
+s8503
+i<yajl/yajl_common.h>
+
+N/Users/kevin/Desktop/CoorZip/YAJL.framework/YAJL
+c000000004E000542000000000001B720
+t1308624194
+s112416
+
+N/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/CoorZip.LinkFileList
+c000000004E000E5700000000000000D2
+t1308626519
+s210
+
+N/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/CoorZipAppDelegate.o
+t1308626523
+s46900
+
+N/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/main.o
+t1308626523
+s4976
+
+N/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app
+t1308626523
+s102
+
+N/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Info.plist
+t1308626519
+s1285
+
+N/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/MacOS/CoorZip
+t1308626523
+s22640
+
+N/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/PkgInfo
+t1308626519
+s8
+
+N/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1308626519
+s92
+
+N/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Resources/English.lproj/MainMenu.nib
+t1308626520
+s32643
+
+N/Users/kevin/Desktop/CoorZip/main.m
+c000000004DFFDE6200000000000000F6
+t1308614242
+s246
+i<Cocoa/Cocoa.h>
+
+N/var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-bwmpprmsaktubuedvkwdmpudkzah/CoorZip_Prefix.pch.gch
+t1308617225
+s54306576
+
+N/var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-hkbmtrlomtncmygkaouynththtlp/CoorZip_Prefix.pch.gch
+t1308626523
+s54306576
+
+NCoorZip-Info.plist
+c000000004DFFDE6200000000000003EA
+t1308614242
+s1002
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies330319319#330319319#0(0"0(0#1#0"4474799424#0"0#
+
+CCompileC build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/CoorZipAppDelegate.o /Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s330319323.737289
+e330319323.956614
+r1
+xCompileC
+xbuild/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/CoorZipAppDelegate.o
+x/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m: In function '-[CoorZipAppDelegate parseXML:]':
+o/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:78: warning: 'NSString' may not respond to '-countByEnumeratingWithState:objects:count:'
+o/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:78: warning: (Messages without a matching method signature
+o/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:78: warning: will be assumed to return 'id' and accept
+o/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:78: warning: '...' as arguments.)
+lSLF07#2@57"Compile /Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m330319323#330319323#0(535"/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m: In function '-[CoorZipAppDelegate parseXML:]':/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:78: warning: 'NSString' may not respond to '-countByEnumeratingWithState:objects:count:'/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:78: warning: (Messages without a matching method signature/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:78: warning: will be assumed to return 'id' and accept/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m:78: warning: '...' as arguments.)2(22@75"'NSString' may not respond to '-countByEnumeratingWithState:objects:count:'330319323#98#139#0(6@49"/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m330319288#78#0#78#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)330319323#237#109#0(6@49"/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m330319288#78#0#78#0#0"0(0#0#49"/Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m4474797712#1395"    cd /Users/kevin/Desktop/CoorZip    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-generated-files.hmap -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-own-target-headers.hmap -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-all-target-headers.hmap -iquote /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-project-headers.hmap -F/Users/kevin/Desktop/CoorZip/build/Debug -F/Users/kevin/Desktop/CoorZip -I/Users/kevin/Desktop/CoorZip/build/Debug/include -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/DerivedSources/x86_64 -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/DerivedSources -include /var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-hkbmtrlomtncmygkaouynththtlp/CoorZip_Prefix.pch -c /Users/kevin/Desktop/CoorZip/CoorZipAppDelegate.m -o /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/CoorZipAppDelegate.o0#
+
+CCompileC build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/main.o /Users/kevin/Desktop/CoorZip/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s330319323.736050
+e330319323.903761
+r1
+xCompileC
+xbuild/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/main.o
+x/Users/kevin/Desktop/CoorZip/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@43"Compile /Users/kevin/Desktop/CoorZip/main.m330319323#330319323#0(0"0(0#0#35"/Users/kevin/Desktop/CoorZip/main.m4474797712#1367"    cd /Users/kevin/Desktop/CoorZip    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-generated-files.hmap -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-own-target-headers.hmap -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-all-target-headers.hmap -iquote /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-project-headers.hmap -F/Users/kevin/Desktop/CoorZip/build/Debug -F/Users/kevin/Desktop/CoorZip -I/Users/kevin/Desktop/CoorZip/build/Debug/include -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/DerivedSources/x86_64 -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/DerivedSources -include /var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-hkbmtrlomtncmygkaouynththtlp/CoorZip_Prefix.pch -c /Users/kevin/Desktop/CoorZip/main.m -o /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib
+s330319319.940876
+e330319320.442314
+r1
+xCompileXIB
+x/Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib:543: note: This view is clipping its content.
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib330319319#330319320#0(142"/* com.apple.ibtool.document.notices *//Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib:543: note: This view is clipping its content.1(13@34"This view is clipping its content.330319320#18446744073709551615#0#0(6@55"/Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib330313058#543#0#543#0#0"0(0#0#55"/Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib4474797712#334"    cd /Users/kevin/Desktop/CoorZip    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Resources/English.lproj/MainMenu.nib /Users/kevin/Desktop/CoorZip/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s330319319.940072
+e330319319.987477
+r1
+xCopyStringsFile
+x/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings330319319#330319319#0(0"0(0#0#60"/Users/kevin/Desktop/CoorZip/English.lproj/InfoPlist.strings4474797712#345"    cd /Users/kevin/Desktop/CoorZip    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Resources/English.lproj0#
+
+CLd /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/MacOS/CoorZip normal x86_64
+s330319323.956710
+e330319323.995446
+r1
+xLd
+x/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/MacOS/CoorZip
+xnormal
+xx86_64
+lSLF07#2@80"Link /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/MacOS/CoorZip330319323#330319323#0(0"0(0#0#0"4474797712#591"    cd /Users/kevin/Desktop/CoorZip    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/kevin/Desktop/CoorZip/build/Debug -F/Users/kevin/Desktop/CoorZip/build/Debug -F/Users/kevin/Desktop/CoorZip -filelist /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/Objects-normal/x86_64/CoorZip.LinkFileList -Xlinker -rpath -Xlinker @loader_path/../Frameworks -mmacosx-version-min=10.6 -framework Cocoa -framework YAJL -o /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/MacOS/CoorZip0#
+
+CProcessInfoPlistFile /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Info.plist CoorZip-Info.plist
+s330319319.935836
+e330319319.939889
+r1
+xProcessInfoPlistFile
+x/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Info.plist
+xCoorZip-Info.plist
+lSLF07#2@26"Process CoorZip-Info.plist330319319#330319319#0(0"0(0#0#47"/Users/kevin/Desktop/CoorZip/CoorZip-Info.plist4474797824#280"    cd /Users/kevin/Desktop/CoorZip    builtin-infoPlistUtility CoorZip-Info.plist -genpkginfo /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-bwmpprmsaktubuedvkwdmpudkzah/CoorZip_Prefix.pch.gch CoorZip_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s330310021.913374
+e330310025.211566
+r1
+xProcessPCH
+x/var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-bwmpprmsaktubuedvkwdmpudkzah/CoorZip_Prefix.pch.gch
+xCoorZip_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile CoorZip_Prefix.pch330310021#330310025#0(0"0(0#0#47"/Users/kevin/Desktop/CoorZip/CoorZip_Prefix.pch4489514640#1252"    cd /Users/kevin/Desktop/CoorZip    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-generated-files.hmap -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-own-target-headers.hmap -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-all-target-headers.hmap -iquote /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-project-headers.hmap -F/Users/kevin/Desktop/CoorZip/build/Debug -I/Users/kevin/Desktop/CoorZip/build/Debug/include -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/DerivedSources/x86_64 -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/DerivedSources -c /Users/kevin/Desktop/CoorZip/CoorZip_Prefix.pch -o /var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-bwmpprmsaktubuedvkwdmpudkzah/CoorZip_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-hkbmtrlomtncmygkaouynththtlp/CoorZip_Prefix.pch.gch CoorZip_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s330319320.442442
+e330319323.735886
+r1
+xProcessPCH
+x/var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-hkbmtrlomtncmygkaouynththtlp/CoorZip_Prefix.pch.gch
+xCoorZip_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile CoorZip_Prefix.pch330319320#330319323#0(0"0(0#0#47"/Users/kevin/Desktop/CoorZip/CoorZip_Prefix.pch4474797712#1283"    cd /Users/kevin/Desktop/CoorZip    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-generated-files.hmap -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-own-target-headers.hmap -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-all-target-headers.hmap -iquote /Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/CoorZip-project-headers.hmap -F/Users/kevin/Desktop/CoorZip/build/Debug -F/Users/kevin/Desktop/CoorZip -I/Users/kevin/Desktop/CoorZip/build/Debug/include -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/DerivedSources/x86_64 -I/Users/kevin/Desktop/CoorZip/build/CoorZip.build/Debug/CoorZip.build/DerivedSources -c /Users/kevin/Desktop/CoorZip/CoorZip_Prefix.pch -o /var/folders/28/n0q9glss34l70ldw89b1mwd40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CoorZip_Prefix-hkbmtrlomtncmygkaouynththtlp/CoorZip_Prefix.pch.gch0#
+
+CTouch /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app
+s330319323.995532
+e330319323.998796
+r1
+xTouch
+x/Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app
+lSLF07#2@58"Touch /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app330319323#330319323#0(0"0(0#0#0"4474797712#111"    cd /Users/kevin/Desktop/CoorZip    /usr/bin/touch -c /Users/kevin/Desktop/CoorZip/build/Debug/CoorZip.app0#
+

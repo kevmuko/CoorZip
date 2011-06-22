@@ -1,0 +1,72 @@
+CoorZip (made by: Kevin Ko aka uhelios)
+http://uhelios.com
+
+UPDATE 2:
+- Saves Result in a Text File
+- More efficient
+
+UPDATE 3:
+- Enables individual coordinate conversion
+- Added Icon
+
+UPDATE 4:
+- Made cool-down faster
+- Minor bug fixed
+
+UPDATE 5:
+- Compatible with 10.6+
+- Fixed memory leak (now much faster)
+
+UPDATE 6:
+- Added XML (uses yahoo's)
+
+CoorZip is a utility that imports CSV (Excel documents) that contain latitude/longitude coordinates or individual
+coordinates and converts them to U.S. Postal Zipcodes through Google's & Yahoo's Reverse Geocoding API by JSON or XML parsing.
+
+Example of a CSV document that can be used:
+
+48.85, -92.55
+48.85, -92.45
+48.75, -123.65
+48.75, -123.55
+48.75, -123.45
+48.75, -123.35
+48.75, -123.25
+48.75, -123.15
+48.75, -123.05
+48.75, -122.95
+
+CSV documents are basically text files that contain a comma as a separator between each column.
+Thus, you can just make a simple text file and rename the extension to .csv to fit your needs.
+*Note: This utility only reads CSV documents as floats, NOT STRINGS/TEXT! So get rid of the quotation marks!*
+
+As CoorZip imports the data, you are able to execute these coordinates to be converted into zipcodes based
+on Google's Reverse Geocoding API found here: http://code.google.com/apis/maps/documentation/geocoding/
+and Yahoo's PlaceFinder API found here: http://developer.yahoo.com/geo/placefinder/
+
+The format for the URL, as shown in the documentation, is as so:
+
+(google) http://maps.googleapis.com/maps/api/geocode/json?latlng={latitude},{longitude}&sensor=true
+
+Replacing {latitude} & {longitude} with the appropriate coordinate values.
+By loading this URL through CoorZip and finding the return value, it provides us with all the necessary
+information to find the postal zip code.
+
+The return value is in JSON or XML format, which is preferred because of its quick and easy
+parsing methods. To parse the JSON, CoorZip uses the yajl-objc framework. 
+
+A NSArray is formed by taking the raw JSON and using [json YAJL_JSON];
+Where json is the return value from the Google API.
+
+For XML, we simply ignore everything except between the <postal></postal> tags. This is only for
+Yahoo's API.
+
+From this we can easily search the NSArray and the sub-arrays for the postal_code.
+We loop this until the CSV document has reached its end and leaving 4/10 of a second to "cool off" and
+prevent a memory-overload (for cases if you have over 1,000 pairs in the CSV document).
+
+*Note: Google's Reverse Geocoding only allows 2,500 queries per day!!*
+*Note: Yahoo's PlaceFinder allows 50,000 queries per day!!*
+
+Finally, we make it so that it saves the result into a text file on the desktop named coorzip.txt.
+
