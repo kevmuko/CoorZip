@@ -27,11 +27,6 @@
 	[self performSelectorInBackground:@selector(parseJSONAdder:) withObject:dictionaryCoord];
 }
 
--(void)applicationWillTerminate:(NSNotification *)notification {
-	//save to a file
-	[[zipcodes stringValue] writeToFile:[NSHomeDirectory() stringByAppendingString:@"/Desktop/coorzip.txt"] atomically:NO encoding:NSUTF8StringEncoding error:NULL];
-}
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 
 	[zipcodes setEditable:YES];
