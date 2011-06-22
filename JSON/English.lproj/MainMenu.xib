@@ -12,8 +12,8 @@
     </object>
     <object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
       <bool key="EncodedWithXMLCoder">YES</bool>
-      <integer value="29"/>
       <integer value="372"/>
+      <integer value="29"/>
     </object>
     <object class="NSArray" key="IBDocument.PluginDependencies">
       <bool key="EncodedWithXMLCoder">YES</bool>
@@ -1548,7 +1548,7 @@
             <object class="NSTextField" id="673650639">
               <reference key="NSNextResponder" ref="439893737"/>
               <int key="NSvFlags">268</int>
-              <string key="NSFrame">{{37, 56}, {230, 65}}</string>
+              <string key="NSFrame">{{37, 52}, {230, 73}}</string>
               <reference key="NSSuperview" ref="439893737"/>
               <string key="NSReuseIdentifierKey">_NS:3922</string>
               <bool key="NSEnabled">YES</bool>
@@ -1556,7 +1556,11 @@
                 <int key="NSCellFlags">-1805517311</int>
                 <int key="NSCellFlags2">171970560</int>
                 <string key="NSContents"/>
-                <reference key="NSSupport" ref="441088776"/>
+                <object class="NSFont" key="NSSupport">
+                  <string key="NSName">LucidaGrande</string>
+                  <double key="NSSize">11</double>
+                  <int key="NSfFlags">16</int>
+                </object>
                 <string key="NSPlaceholderString">Converted Zipcodes Will Appear Here In the Order of the CSV</string>
                 <string key="NSCellIdentifier">_NS:3922</string>
                 <reference key="NSControlView" ref="673650639"/>
@@ -3016,7 +3020,6 @@
               <reference ref="802383957"/>
               <reference ref="899285076"/>
               <reference ref="708149728"/>
-              <reference ref="673650639"/>
               <reference ref="266151919"/>
               <reference ref="248772076"/>
               <reference ref="272118828"/>
@@ -3024,6 +3027,7 @@
               <reference ref="111572987"/>
               <reference ref="392252186"/>
               <reference ref="768907127"/>
+              <reference ref="673650639"/>
             </object>
             <reference key="parent" ref="972006081"/>
           </object>
@@ -3924,6 +3928,7 @@
           <string>56.IBPluginDependency</string>
           <string>56.ImportedFromIB2</string>
           <string>563.IBPluginDependency</string>
+          <string>563.IBViewBoundsToFrameTransform</string>
           <string>564.IBPluginDependency</string>
           <string>568.IBPluginDependency</string>
           <string>568.IBViewBoundsToFrameTransform</string>
@@ -4226,6 +4231,9 @@
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
           <integer value="1"/>
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+          <object class="NSAffineTransform">
+            <bytes key="NSTransformStruct">P4AAAL+AAADCpgAAwuwAAA</bytes>
+          </object>
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
           <object class="NSAffineTransform">

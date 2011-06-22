@@ -27,6 +27,10 @@
 	[self performSelectorInBackground:@selector(parseXML:) withObject:dictionaryCoord];
 }
 
+-(void)applicationWillTerminate:(NSNotification *)notification {
+	//save to a file
+	[[zipcodes stringValue] writeToFile:[NSHomeDirectory() stringByAppendingString:@"/Desktop/coorzip.txt"] atomically:NO encoding:NSUTF8StringEncoding error:NULL];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 
@@ -150,12 +154,11 @@
 	NSArray *array2  = [rest componentsSeparatedByString:@"</postal>"];
 	NSString *postal = (NSString *)[array2 objectAtIndex:0];
 	
-	
-	if (postal) {
+	if (![postal isEqualToString:@""]) {
 	postal = [NSString stringWithFormat:@"%@ <Lat:%@ Lon:%@>", postal, [dictionary objectForKey:@"latitude"], [dictionary objectForKey:@"longitude"]];
 	}	
 	else {
-		postal = [NSString stringWithFormat:@"Not Available"];
+		postal = [NSString stringWithFormat:@"Not Available <Lat:%@ Lon: %@>", [dictionary objectForKey:@"latitude"], [dictionary objectForKey:@"longitude"]];
 	}
 	[self parseXMLAdder:postal];
 }

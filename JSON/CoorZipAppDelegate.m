@@ -27,6 +27,10 @@
 	[self performSelectorInBackground:@selector(parseJSONAdder:) withObject:dictionaryCoord];
 }
 
+-(void)applicationWillTerminate:(NSNotification *)notification {
+	//save to a file
+	[[zipcodes stringValue] writeToFile:[NSHomeDirectory() stringByAppendingString:@"/Desktop/coorzip.txt"] atomically:NO encoding:NSUTF8StringEncoding error:NULL];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 
@@ -155,14 +159,14 @@
 			
 			//check for postalcodes
 			if ([type containsObject:@"postal_code"] || [type containsObject:@"postal_code_prefix"] || [type containsObject:@"postal_code_prefix"] && [type containsObject:@"postal_code"]) {
-				NSString *postal = [NSString stringWithFormat:@"%@ - Lat:%@ Lon:%@", [subpair objectForKey:@"long_name"], [dictionary objectForKey:@"latitude"], [dictionary objectForKey:@"longitude"]];
+				NSString *postal = [NSString stringWithFormat:@"%@ <Lat:%@ Lon:%@>", [subpair objectForKey:@"long_name"], [dictionary objectForKey:@"latitude"], [dictionary objectForKey:@"longitude"]];
 				return postal;
 			}
 		}
 	}
 	
 	//found none
-	return @"Not Available";
+	return @"Not Available <Lat:%@ Lon:%@>", [dictionary objectForKey:@"latitude"], [dictionary objectForKey:@"longitude"];
 }
 
 -(IBAction)openCSV:(NSButton *)button {
