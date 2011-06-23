@@ -13,6 +13,8 @@
 @synthesize window;
 @synthesize zipcodes, statusLabel, progress, executeButton, loadButton;
 @synthesize longitudeText, latitudeText;
+@synthesize progressValue;
+@synthesize convertButton;
 
 -(IBAction)parseIndividual:(NSButton *)button {
 	[button setState:NSOffState];
@@ -30,16 +32,23 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 
 	[zipcodes setEditable:YES];
+	flag = 0;
 }
 
 -(IBAction)executeConversion:(NSButton *)button {
 	[button setState:NSOffState];
 	
+	[convertButton setEnabled:NO];
 	//reset text
-	[zipcodes setStringValue:@""];
-	
-	//execute
-	[self performSelectorInBackground:@selector(parseCSV:) withObject:directory];
+	if ([[executeButton title] isEqualToString:@"Stop Conversion"]) {
+		flag = 1;
+		[executeButton setTitle:@"Execute Conversion to Zipcode(s)"];
+	}
+	else {
+		[zipcodes setStringValue:@""];
+		//execute
+		[self performSelectorInBackground:@selector(parseCSV:) withObject:directory];
+	}
 }
 
 -(void)parseCSV:(NSString *)dir {
@@ -51,7 +60,7 @@
 		NSArray *lines = [stringCSV componentsSeparatedByCharactersInSet: [NSCharacterSet newlineCharacterSet]];
 		
 		//disable buttons
-		[executeButton setEnabled:NO];
+		[executeButton setTitle:@"Stop Conversion"];
 		[loadButton setEnabled:NO];
 		
 		//set the max as the progress bar
@@ -62,19 +71,22 @@
 		[progress setDoubleValue:0];
 		
 		//disable result textfield (reduces lag)
-		[zipcodes setEnabled:NO];
+		//[zipcodes setEnabled:NO];
 		
 		//parse CSV and separate it by commas
 		for (NSString *line in lines) {
-			NSArray *values = [line componentsSeparatedByString:@","];
+			NSArray *values = [line componentsSeparatedByString:@", "];
 			if ([values count] != 2) {
 				continue;
 			}
-			
+			if (flag == 1) {
+				return;
+			}
 			//save in dictionary
 			NSString *latitude = [values objectAtIndex:0];
 			NSString *longitude = [values objectAtIndex:1];
 			
+			/*
 			//get rid of spaces
 			if ([latitude rangeOfString:@" "].location != NSNotFound) {
 				latitude = [latitude stringByReplacingOccurrencesOfString:@" " withString:@""]; 
@@ -82,6 +94,7 @@
 			if ([longitude rangeOfString:@" "].location != NSNotFound) {
 				longitude = [longitude stringByReplacingOccurrencesOfString:@" " withString:@""];
 			}
+			 */
 			[dictionaryCoord setObject:latitude forKey:@"latitude"];
 			[dictionaryCoord setObject:longitude forKey:@"longitude"];
 			
@@ -94,14 +107,15 @@
 			//update progressbar by adding 1
 			float newValue = [progress doubleValue] + 1;
 			[progress setDoubleValue:newValue];
-			
+			[self updateProgressText:(int)newValue max:(int)[progress maxValue]];
 		}
 		
 		//enable result text field
-		[zipcodes setEnabled:YES];
+		//[zipcodes setEnabled:YES];
 		
 		//reset buttons
-		[executeButton setEnabled:YES];
+		[executeButton setTitle:@"Execute Conversion to Zipcode(s)"];
+		flag = 0;
 		[loadButton setEnabled:YES];
 		
 		//set the progress to maximum
@@ -129,18 +143,13 @@
 		[statusLabel setStringValue:@"Status: Not Loaded"];
 		[statusLabel setTextColor:[NSColor orangeColor]];
 	}
+	[convertButton setEnabled:YES];
 	[pool release];
+	
 }
 -(void)parseXMLAdder:(NSString *)postal {
 	//append to the end of the existing values in the zipcodes textfield
-	NSString *string;
-	if ([[zipcodes stringValue] isEqualToString:@""]) {
-		string = [NSString stringWithFormat:@"%@", postal];
-	}
-	else {
-		string = [[zipcodes stringValue] stringByAppendingFormat:@"\n%@", postal];
-	}
-	NSLog(@"Result: %@", string);
+	NSString *string = [[zipcodes stringValue] stringByAppendingFormat:@"\n%@", postal];
 	[zipcodes setStringValue:string];
 }
 -(void)parseXML:(NSMutableDictionary *)dictionary {
@@ -166,6 +175,11 @@
 		postal = [NSString stringWithFormat:@"Not Available <Lat:%@ Lon: %@>", [dictionary objectForKey:@"latitude"], [dictionary objectForKey:@"longitude"]];
 	}
 	[self parseXMLAdder:postal];
+}
+
+-(void)updateProgressText:(int)current max:(int)max {
+	NSString *text = [NSString stringWithFormat:@"%i/%i", current, max];
+	[progressValue setStringValue:text];
 }
 
 -(IBAction)openCSV:(NSButton *)button {
