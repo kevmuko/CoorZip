@@ -12,7 +12,7 @@
 		fRef = 256AC3D90F4B6AC300CF3369 /* CoorZipAppDelegate.m */;
 		name = "CoorZipAppDelegate.m: 86";
 		rLen = 0;
-		rLoc = 2742;
+		rLoc = 2743;
 		rType = 0;
 		vrLen = 609;
 		vrLoc = 2012;
@@ -61,16 +61,6 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	0A5DE2A413B360E900B061DA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* CoorZipAppDelegate.m */;
-		name = "CoorZipAppDelegate.m: 86";
-		rLen = 0;
-		rLoc = 2742;
-		rType = 0;
-		vrLen = 649;
-		vrLoc = 1972;
-	};
 	0A87C7E113B243A9007E423F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 089C165DFE840E0CC02AAC07 /* English */;
@@ -92,6 +82,16 @@
 		name = "/Users/kevin/Desktop/CoorZip/CoorZip-Info.plist";
 		rLen = 0;
 		rLoc = 0;
+	};
+	0AA997C513B66721009D6266 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CoorZipAppDelegate.m */;
+		name = "CoorZipAppDelegate.m: 79";
+		rLen = 0;
+		rLoc = 2341;
+		rType = 0;
+		vrLen = 576;
+		vrLoc = 2046;
 	};
 	0AAB8D5F13B10E00000F0226 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -116,9 +116,9 @@
 	};
 	256AC3D90F4B6AC300CF3369 /* CoorZipAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 2691}}";
-			sepNavSelRange = "{2742, 0}";
-			sepNavVisRange = "{2012, 609}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 2665}}";
+			sepNavSelRange = "{2341, 0}";
+			sepNavVisRange = "{2046, 576}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -177,14 +177,14 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 330527098;
-			PBXWorkspaceStateSaveDate = 330527098;
+			PBXPerProjectTemplateStateSaveDate = 330721032;
+			PBXWorkspaceStateSaveDate = 330721032;
 		};
 		perUserProjectItems = {
 			0A0A805C13B3717C00588A62 /* PBXTextBookmark */ = 0A0A805C13B3717C00588A62 /* PBXTextBookmark */;
-			0A5DE2A413B360E900B061DA /* PBXTextBookmark */ = 0A5DE2A413B360E900B061DA /* PBXTextBookmark */;
 			0A87C7E113B243A9007E423F /* PBXTextBookmark */ = 0A87C7E113B243A9007E423F /* PBXTextBookmark */;
 			0A87C7E213B243A9007E423F /* PlistBookmark */ = 0A87C7E213B243A9007E423F /* PlistBookmark */;
+			0AA997C513B66721009D6266 /* PBXTextBookmark */ = 0AA997C513B66721009D6266 /* PBXTextBookmark */;
 			0AAB8D5F13B10E00000F0226 /* PBXBookmark */ = 0AAB8D5F13B10E00000F0226 /* PBXBookmark */;
 			0AC6AC1F13B2582100B364E9 /* PBXTextBookmark */ = 0AC6AC1F13B2582100B364E9 /* PBXTextBookmark */;
 		};

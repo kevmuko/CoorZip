@@ -86,7 +86,7 @@
 			NSString *latitude = [values objectAtIndex:0];
 			NSString *longitude = [values objectAtIndex:1];
 			
-			/*
+			
 			//get rid of spaces
 			if ([latitude rangeOfString:@" "].location != NSNotFound) {
 				latitude = [latitude stringByReplacingOccurrencesOfString:@" " withString:@""]; 
@@ -94,7 +94,7 @@
 			if ([longitude rangeOfString:@" "].location != NSNotFound) {
 				longitude = [longitude stringByReplacingOccurrencesOfString:@" " withString:@""];
 			}
-			 */
+			 
 			[dictionaryCoord setObject:latitude forKey:@"latitude"];
 			[dictionaryCoord setObject:longitude forKey:@"longitude"];
 			
