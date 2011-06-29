@@ -66,7 +66,7 @@
 		
 		//parse CSV and separate it by commas
 		for (NSString *line in lines) {
-			NSArray *values = [line componentsSeparatedByString:@", "];
+			NSArray *values = [line componentsSeparatedByString:@","];
 			if ([values count] != 2) {
 				continue;
 			}
@@ -74,7 +74,7 @@
 			//save in dictionary
 			NSString *latitude = [values objectAtIndex:0];
 			NSString *longitude = [values objectAtIndex:1];
-			
+			/*
 			//get rid of spaces
 			if ([latitude rangeOfString:@" "].location != NSNotFound) {
 				latitude = [latitude stringByReplacingOccurrencesOfString:@" " withString:@""]; 
@@ -82,6 +82,7 @@
 			if ([longitude rangeOfString:@" "].location != NSNotFound) {
 				longitude = [longitude stringByReplacingOccurrencesOfString:@" " withString:@""];
 			}
+			 */
 			[dictionaryCoord setObject:latitude forKey:@"latitude"];
 			[dictionaryCoord setObject:longitude forKey:@"longitude"];			//cool off = no memory overload
 			usleep(400000);

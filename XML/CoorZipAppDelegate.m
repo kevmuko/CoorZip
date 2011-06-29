@@ -24,7 +24,7 @@
 	//save in dictionary
 	NSMutableDictionary *dictionaryCoord = [NSMutableDictionary dictionary];
 	[dictionaryCoord setObject:[latitudeText stringValue] forKey:@"latitude"];
-	[dictionaryCoord setObject:[latitudeText stringValue] forKey:@"longitude"];
+	[dictionaryCoord setObject:[longitudeText stringValue] forKey:@"longitude"];
 	
 	[self performSelectorInBackground:@selector(parseXML:) withObject:dictionaryCoord];
 }
@@ -75,7 +75,7 @@
 		
 		//parse CSV and separate it by commas
 		for (NSString *line in lines) {
-			NSArray *values = [line componentsSeparatedByString:@", "];
+			NSArray *values = [line componentsSeparatedByString:@","];
 			if ([values count] != 2) {
 				continue;
 			}
