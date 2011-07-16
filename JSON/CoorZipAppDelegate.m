@@ -22,7 +22,7 @@
 	//save in dictionary
 	NSMutableDictionary *dictionaryCoord = [NSMutableDictionary dictionary];
 	[dictionaryCoord setObject:[latitudeText stringValue] forKey:@"latitude"];
-	[dictionaryCoord setObject:[latitudeText stringValue] forKey:@"longitude"];
+	[dictionaryCoord setObject:[longitudeText stringValue] forKey:@"longitude"];
 	
 	[self performSelectorInBackground:@selector(parseJSONAdder:) withObject:dictionaryCoord];
 }
@@ -74,6 +74,7 @@
 			//save in dictionary
 			NSString *latitude = [values objectAtIndex:0];
 			NSString *longitude = [values objectAtIndex:1];
+			//NSLog(@"lat, lon: %@, %@", latitude, longitude);
 			/*
 			//get rid of spaces
 			if ([latitude rangeOfString:@" "].location != NSNotFound) {
@@ -134,12 +135,8 @@
 	//append to the end of the existing values in the zipcodes textfield
 	
 	NSString *string;
-	if ([[zipcodes stringValue] isEqualToString:@""]) {
-		string = [NSString stringWithFormat:@"%@", [self parseJSON:dictionary]];
-	}
-	else {
+	
 		string = [[zipcodes stringValue] stringByAppendingFormat:@"\n%@", [self parseJSON:dictionary]];
-	}
 	[zipcodes setStringValue:string];
 }
 -(NSString *)parseJSON:(NSMutableDictionary *)dictionary {
@@ -150,7 +147,6 @@
 	
 	//get source
 	NSString *source = [NSString stringWithContentsOfURL:[NSURL URLWithString:url] encoding:NSUTF8StringEncoding error:NULL];
-	
 	//array the json
 	NSDictionary *googleArray = [source yajl_JSON];
 	NSArray * dataArray = [googleArray objectForKey:@"results"];

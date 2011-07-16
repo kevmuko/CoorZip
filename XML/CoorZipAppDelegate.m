@@ -107,7 +107,7 @@
 			//update progressbar by adding 1
 			float newValue = [progress doubleValue] + 1;
 			[progress setDoubleValue:newValue];
-			[self updateProgressText:(int)newValue max:(int)[progress maxValue]];
+			[self updateProgressText:(int)newValue max:countValues];
 		}
 		
 		//enable result text field
